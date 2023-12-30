@@ -27,8 +27,9 @@ class PriceComparison
         {
             $"https://www.digitec.ch/de/search?q={productName}",
             $"https://www.galaxus.ch/de/search?q={productName}",
-            $"https://www.amazon.com/s?k={productName}",
-            $"https://www.microcenter.com/search?q={productName}",
+            $"https://www.brack.ch/search?={productName}",
+            // $"https://www.amazon.com/s?k={productName}",
+            // $"https://www.microcenter.com/search?q={productName}",
         })
         {
             try
@@ -38,8 +39,9 @@ class PriceComparison
 
                 string xpathExpression = url.Contains("digitec.ch") ? "//*[@id=\"productListingContainer\"]/div[4]/article[1]/div[4]/span/span" :
                                         url.Contains("galaxus.ch") ? "//*[@id=\"productListingContainer\"]/div[4]/article[1]/div[4]" :
-                                        url.Contains("amazon.com") ? "//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/span/div/div/div/div[2]/div/div/div[3]/div[1]/div/div[3]/div/span[2]" :
-                                        url.Contains("microcenter.com") ? "//*[@id=\"pricing\"]" : "";
+                                        url.Contains("brack.ch") ? "//*[@id=\"b2c-search-snippet\"]/div/div[2]/section[2]/div[2]/ul/li[1]/div[4]/div[2]/div/div/div/span" : "";
+                                        // url.Contains("amazon.com") ? "//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/span/div/div/div/div[2]/div/div/div[3]/div[1]/div/div[3]/div/span[2]" :
+                                        // url.Contains("microcenter.com") ? "//*[@id=\"pricing\"]" : "";
 
                 if (string.IsNullOrEmpty(xpathExpression))
                 {
