@@ -1,0 +1,28 @@
+
+{
+    "name": "Fust",
+    "url": "https://www.fust.ch/de/search.html?query=",
+    "xpath": "//*[@id='product-list']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]"
+},
+{
+    "name": "Media Markt",
+    "url": "https://www.mediamarkt.ch/de/search.html?query=",
+    "xpath": "//*[@id='product-list']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]"
+},
+{
+    "name": "Microspot",
+    "url": "https://www.microspot.ch/de/search?query=",
+    "xpath": "//*[@id='product-list']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]"
+},
+{
+    "name": "Melectronics",
+    "url": "https://www.melectronics.ch/de/search?q=",
+    "xpath": "//*[@id='product-list']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]"
+},
+
+{
+    "name": "Brack",
+    "url": "https://www.brack.ch/search?query=",
+    "xpath": "//*[@id='product-list']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]"
+}
+
