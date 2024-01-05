@@ -1,0 +1,6 @@
+C:\Users\veenu\OneDrive - GIBZ\GIBZ\dev\Infa2b\Informatik Module\M450\Projekt\Modul450\obj\Debug\net8.0-windows\Applikation.csproj.AssemblyReference.cache
+C:\Users\veenu\OneDrive - GIBZ\GIBZ\dev\Infa2b\Informatik Module\M450\Projekt\Modul450\obj\Debug\net8.0-windows\Applikation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\veenu\OneDrive - GIBZ\GIBZ\dev\Infa2b\Informatik Module\M450\Projekt\Modul450\obj\Debug\net8.0-windows\Applikation.AssemblyInfoInputs.cache
+C:\Users\veenu\OneDrive - GIBZ\GIBZ\dev\Infa2b\Informatik Module\M450\Projekt\Modul450\obj\Debug\net8.0-windows\Applikation.AssemblyInfo.cs
+C:\Users\veenu\OneDrive - GIBZ\GIBZ\dev\Infa2b\Informatik Module\M450\Projekt\Modul450\obj\Debug\net8.0-windows\Applikation.csproj.CoreCompileInputs.cache
+C:\Users\veenu\OneDrive - GIBZ\GIBZ\dev\Infa2b\Informatik Module\M450\Projekt\Modul450\obj\Debug\net8.0-windows\Applikation.sourcelink.json
