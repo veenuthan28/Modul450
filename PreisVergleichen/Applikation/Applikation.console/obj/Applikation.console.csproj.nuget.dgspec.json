@@ -1,0 +1,93 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj",
+        "projectName": "Applikation.console",
+        "projectPath": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj",
+        "packagesPath": "C:\\Users\\veenu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\PreisVergleichen\\Applikation\\Applikation.console\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\veenu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.57, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "ScottPlot": {
+              "target": "Package",
+              "version": "[4.1.70, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.16.2, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.16.2, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[120.0.6099.10900, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
