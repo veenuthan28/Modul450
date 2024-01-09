@@ -1,6 +1,16 @@
 {
     "Websites": [
         {
+            "name": "Fust",
+            "url": "https://www.fust.ch/de/search.html?searchtext=",
+            "xpath": "//*[@id='productslist']/li[1]/div/div/div[2]/div[2]/div/div"
+        },
+        {
+            "name": "Microspot",
+            "url": "https://www.microspot.ch/de/search?search=",
+            "xpath": "//*[@id='container-product-0-item']/div[3]/div[1]"
+        },
+        {
             "Url": "https://www.interdiscount.ch/search?search=",
             "Xpath": "//*[@id=\"TOP_OF_PRODUCTS_LIST\"]/div[4]/div[1]/div/a/div[2]/div[1]/div/div"
         },
