@@ -429,19 +429,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\veenu\\.nuget\\packages\\": {}
+    "C:\\Users\\veenu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj",
+      "projectUniqueName": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\1gitreop\\Modul450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj",
       "projectName": "Applikation.console",
-      "projectPath": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj",
+      "projectPath": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\1gitreop\\Modul450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj",
       "packagesPath": "C:\\Users\\veenu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\PreisVergleichen\\Applikation\\Applikation.console\\obj\\",
+      "outputPath": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\1gitreop\\Modul450\\PreisVergleichen\\Applikation\\Applikation.console\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\veenu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -507,12 +512,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

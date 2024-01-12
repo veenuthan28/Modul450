@@ -1,0 +1,25 @@
+{
+  "Websites": [
+    {
+      "url": "https://www.fust.ch/de/search.html?searchtext=",
+      "xpath": "//*[@id='productslist']/li[1]/div/div/div[2]/div[2]/div/div"
+    },
+    {
+      "url": "https://www.microspot.ch/de/search?search=",
+      "xpath": "//*[@id='container-product-0-item']/div[3]/div[1]"
+    },
+    {
+      "Url": "https://www.interdiscount.ch/search?search=",
+      "Xpath": "//*[@id=\"TOP_OF_PRODUCTS_LIST\"]/div[4]/div[1]/div/a/div[2]/div[1]/div/div",
+    },
+    {
+      "Url": "https://www.digitec.ch/de/search?q=",
+      "Xpath": "//*[@id=\"productListingContainer\"]/div[4]/article[1]/div[4]/span/span",
+    },
+    {
+      "Url": "https://www.galaxus.ch/de/search?q=",
+      "Xpath": "//*[@id=\"productListingContainer\"]/div[4]/article[1]/div[4]",
+    }
+  ]
+}
+

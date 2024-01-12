@@ -1,0 +1,4 @@
+{
+  "InvalidKey": "SomeValue",
+  "Websites": "This should be a list, not a string"
+}

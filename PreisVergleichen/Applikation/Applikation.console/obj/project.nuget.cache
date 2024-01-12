@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+kSNIl19dW2QF9JRArRT7hscQAmp8vdQ9dRl49keKag+T1usO5GaBXa0mLVgk21l9CA4ugxIjUo3wpgfY2os1w==",
+  "dgSpecHash": "RAWHiF+v5jVNaY2uCbbfjJVm5TPau23zq7x33PMYfPk4HDGFiRvBWNZFPUe6GJSghS7io3Aain/rSV7+gMVAjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj",
+  "projectFilePath": "C:\\Users\\veenu\\OneDrive - GIBZ\\GIBZ\\dev\\Infa2b\\Informatik Module\\M450\\1gitreop\\Modul450\\PreisVergleichen\\Applikation\\Applikation.console\\Applikation.console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\veenu\\.nuget\\packages\\htmlagilitypack\\1.11.57\\htmlagilitypack.1.11.57.nupkg.sha512",
     "C:\\Users\\veenu\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
@@ -12,7 +12,11 @@
     "C:\\Users\\veenu\\.nuget\\packages\\selenium.webdriver\\4.16.2\\selenium.webdriver.4.16.2.nupkg.sha512",
     "C:\\Users\\veenu\\.nuget\\packages\\selenium.webdriver.chromedriver\\120.0.6099.10900\\selenium.webdriver.chromedriver.120.0.6099.10900.nupkg.sha512",
     "C:\\Users\\veenu\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512",
-    "C:\\Users\\veenu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+    "C:\\Users\\veenu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\veenu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\veenu\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\veenu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\veenu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }

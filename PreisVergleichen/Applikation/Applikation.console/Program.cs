@@ -5,20 +5,22 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using Newtonsoft.Json;
 
-class WebsiteConfig
+public class WebsiteConfig
 {
     public string? Url { get; set; }
     public string? Xpath { get; set; }
+    public decimal Price { get; set; }
+
 }
 
-class AppConfig
+public class AppConfig
 {
     public List<WebsiteConfig>? Websites { get; set; }
 }
 
-class PriceComparison
+public class PriceComparison
 {
-    static async Task Main()
+    public static async Task Main()
     {
         Console.WriteLine("Geben Sie den Namen des Produkts ein, das Sie suchen möchten:");
         string? productName = Console.ReadLine();
@@ -115,8 +117,23 @@ class PriceComparison
             Console.WriteLine($"Ein Fehler ist aufgetreten: {ex.Message}");
         }
     }
+    public static List<WebsiteConfig> LoadConfiguration(string configPath)
+    {
+        try
+        {
+            string configFileContent = File.ReadAllText(configPath);
+            var config = JsonConvert.DeserializeObject<AppConfig>(configFileContent);
+            return config?.Websites ?? new List<WebsiteConfig>();
+        }
+        catch (Exception ex)
+        {
+            // Logge den Fehler oder handle ihn entsprechend
+            Console.WriteLine($"Fehler beim Laden der Konfigurationsdatei: {ex.Message}");
+            return new List<WebsiteConfig>();
+        }
+    }
 
-    static bool TryParsePrice(string priceStr, out double price)
+    public static bool TryParsePrice(string priceStr, out double price)
     {
         // Entfernen Sie das Währungssymbol und das Tausendertrennzeichen, ersetzen Sie das Dezimalkomma durch einen Punkt
         priceStr = priceStr.Replace("CHF", "").Replace(".–", "").Trim();
@@ -127,7 +144,7 @@ class PriceComparison
         return false;
     }
 
-    private static double GetPriceFromLine(string line)
+    public static double GetPriceFromLine(string line)
     {
         int index = line.IndexOf("Preis:");
         if (index >= 0)
@@ -142,7 +159,7 @@ class PriceComparison
     }
 
     // Methode zum Speichern der Ausgabe in eine Datei
-    static void SaveOutputToFile(List<string> outputLines, string filePath)
+    public static void SaveOutputToFile(List<string> outputLines, string filePath)
     {
         try
         {
