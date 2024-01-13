@@ -1,28 +1,57 @@
-﻿using Newtonsoft.Json;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using static System.Net.WebRequestMethods;
 
 namespace Applikation.Tests
 {
     [TestClass]
-    public class ProgramTest
+    public class PriceComparison
     {
         [TestMethod]
-        public void ConstructedUrl_ShouldMatchExpectedFormat()
+        [DataRow("https://www.fust.ch")]
+        [DataRow("https://www.microspot.ch")]
+        [DataRow("https://www.interdiscount.ch")]
+        [DataRow("https://www.digitec.ch")]
+        [DataRow("https://www.galaxus.ch")]
+        public void TestIfUrlExistsInFile(string expectedStart)
         {
             // Arrange
-            string productName = "Iphone 15";
-            string baseUrl = "https://www.fust.ch/de/search.html?searchtext=";
-            string expectedUrl = baseUrl + Uri.EscapeDataString(productName);
+            string filePath = @"../../../../Applikation.console\Vergleichen\iphone15_20240109141712.txt";
+            ;
 
             // Act
-            string actualUrl = "https://www.fust.ch/de/search.html?searchtext=iphone%2015";
+            var fileContent = File.ReadAllText(filePath);
 
             // Assert
-            Assert.AreEqual(expectedUrl, actualUrl);
+            Assert.IsTrue(fileContent.Contains(expectedStart), $"Die erwartete URL '{expectedStart}' wurde nicht in der Datei gefunden.");
+        }
+
+    [TestMethod]
+        public void TestIfEachUrlStartsWithHttpsAndContainsDotCh()
+        {
+            // Arrange
+            string filePath = @"../../../../Applikation.console\Vergleichen\iphone15_20240109141712.txt";
+            var fileContent = File.ReadAllLines(filePath);
+
+            // Act und Assert
+            foreach (var line in fileContent)
+            {
+                Assert.IsTrue(line.StartsWith("https://www") && line.Contains(".ch"), $"Eine URL in der Datei entspricht nicht den Kriterien. URL: {line}");
+            }
+        }
+
+        [TestMethod]
+        public void TestIfPriceExistsInFile()
+        {
+            // Arrange
+            string filePath = @"../../../../Applikation.console\Vergleichen\iphone 12 pro max_20240112203629.txt";
+
+            // Act
+            var fileContent = File.ReadAllText(filePath);
+
+            // Assert
+            Assert.IsTrue(fileContent.Any(char.IsDigit), $"Der Preis wurde nicht in der Datei gefunden.");
         }
     }
 }

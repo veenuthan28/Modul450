@@ -9,8 +9,6 @@ public class WebsiteConfig
 {
     public string? Url { get; set; }
     public string? Xpath { get; set; }
-    public decimal Price { get; set; }
-
 }
 
 public class AppConfig
@@ -20,7 +18,7 @@ public class AppConfig
 
 public class PriceComparison
 {
-    public static async Task Main()
+    public static async Task Main(string[] args)
     {
         Console.WriteLine("Geben Sie den Namen des Produkts ein, das Sie suchen möchten:");
         string? productName = Console.ReadLine();
@@ -34,8 +32,9 @@ public class PriceComparison
         try
         {
             // Laden der Konfiguration aus der JSON-Datei
-            var configPath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "selenium_config.json");
+            var configPath = Path.Combine(Directory.GetCurrentDirectory(), @"../../../../Applikation.console\selenium_config.json");
             var config = JsonConvert.DeserializeObject<AppConfig>(File.ReadAllText(configPath));
+
 
             if (config == null || config.Websites == null || config.Websites.Count == 0)
             {
@@ -101,35 +100,16 @@ public class PriceComparison
             var sortedOutputLines = outputLines.OrderBy(line => GetPriceFromLine(line)).ToList();
 
             // Ordner "vergleichen" erstellen, falls er nicht existiert
-            string folderPath = @"C:\Users\veenu\OneDrive - GIBZ\GIBZ\dev\Infa2b\Informatik Module\M450\PreisVergleichen\Applikation\Applikation.console\Vergleichen\";
-            if (!Directory.Exists(folderPath))
-            {
-                Directory.CreateDirectory(folderPath);
-            }
-
+            string folderPath = Path.Combine(Directory.GetCurrentDirectory(), @"../../../../Applikation.console\Vergleichen");
+            Directory.CreateDirectory(folderPath);
 
             // Methode zum Speichern der Ausgabe in eine Datei aufrufen
-            string fileName = $"{ productName}_{DateTime.Now:yyyyMMddHHmmss}.txt";
+            string fileName = $"{productName}_{DateTime.Now:yyyyMMddHHmmss}.txt";
             SaveOutputToFile(sortedOutputLines, Path.Combine(folderPath, fileName));
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Ein Fehler ist aufgetreten: {ex.Message}");
-        }
-    }
-    public static List<WebsiteConfig> LoadConfiguration(string configPath)
-    {
-        try
-        {
-            string configFileContent = File.ReadAllText(configPath);
-            var config = JsonConvert.DeserializeObject<AppConfig>(configFileContent);
-            return config?.Websites ?? new List<WebsiteConfig>();
-        }
-        catch (Exception ex)
-        {
-            // Logge den Fehler oder handle ihn entsprechend
-            Console.WriteLine($"Fehler beim Laden der Konfigurationsdatei: {ex.Message}");
-            return new List<WebsiteConfig>();
         }
     }
 
@@ -144,7 +124,7 @@ public class PriceComparison
         return false;
     }
 
-    public static double GetPriceFromLine(string line)
+    private static double GetPriceFromLine(string line)
     {
         int index = line.IndexOf("Preis:");
         if (index >= 0)
@@ -159,7 +139,7 @@ public class PriceComparison
     }
 
     // Methode zum Speichern der Ausgabe in eine Datei
-    public static void SaveOutputToFile(List<string> outputLines, string filePath)
+    static void SaveOutputToFile(List<string> outputLines, string filePath)
     {
         try
         {
